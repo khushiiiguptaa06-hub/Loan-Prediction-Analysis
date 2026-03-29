@@ -1,66 +1,87 @@
-#  Loan Prediction Data Analysis
+#  Loan Prediction Data Analysis & Machine Learning
 
-##  Aim
+##  Overview
 
-The aim of this project is to analyze loan applicant data and build a machine learning model to predict loan approval status.
+This project focuses on analyzing loan applicant data and building a machine learning model to predict whether a loan will be approved or not. The project includes data preprocessing, visualization, and classification using Logistic Regression.
 
----
 
-##  Dataset Overview
+##  Objectives
 
-* Total Records: 614
-* Features: 13
-* Includes both categorical and numerical data
+* Understand the dataset structure
+* Handle missing values
+* Perform data visualization
+* Encode categorical variables
+* Train a machine learning model
+* Evaluate model performance
 
----
+##  Dataset
 
-##  Exploratory Data Analysis (EDA)
+The dataset contains information about loan applicants, including:
 
-* Checked missing values
-* Analyzed data distribution
-* Visualized key features using graphs
+* Gender
+* Marital Status
+* Dependents
+* Education
+* Employment Status
+* Income Details
+* Loan Amount
+* Credit History
+* Property Area
+* Loan Status (Target Variable)
 
----
+##  Data Preprocessing
 
-##  Data Cleaning
-
-* Filled missing values:
+* Removed unnecessary column: `Loan_ID`
+* Handled missing values:
 
   * Categorical → Mode
   * Numerical → Mean
-* Converted categorical data using Label Encoding
-* Handled special cases (e.g., Dependents column)
+* Converted `Dependents` from "3+" to 3
+* Encoded categorical variables using Label Encoding
 
----
+##  Data Visualization
 
-##  Model Used
+### Loan Status Distribution
 
-* Logistic Regression
+![Loan Status](images/loan_status.png)
 
----
+### Credit History Distribution
 
-##  Model Performance
+![Credit History](images/credit_history.png)
 
-* Accuracy: ~78%
-* Evaluated using Confusion Matrix and Classification Report
+### Credit History vs Loan Status
 
----
+![Credit History vs Loan](images/credit_history_vs_loan.png)
 
-##  Key Insights
+### Gender vs Loan Status
 
-* Credit History is the most important factor
-* Most loans are approved
-* Data required preprocessing before model training
+![Gender vs Loan](images/gender_vs_loan.png)
 
----
+### Education vs Loan Status
 
-##  Future Improvements
+![Education vs Loan](images/education_vs_loan.png)
 
-* Use advanced models (Random Forest, XGBoost)
-* Perform hyperparameter tuning
-* Deploy using Streamlit or Flask
+### Property Area vs Loan Status
 
----
+![Property Area vs Loan](images/property_area_vs_loan.png)
+
+
+##  Model Building
+
+* Algorithm: Logistic Regression
+* Train-Test Split: 80% Training, 20% Testing
+* Feature Scaling: StandardScaler applied
+
+##  Model Evaluation
+
+* Accuracy: **~78.8%**
+* Confusion Matrix used for evaluation
+
+### Key Insights:
+
+* Credit history is the most important factor
+* Applicants with good credit history have higher approval chances
+* Model performs well for initial prediction tasks
 
 ##  Technologies Used
 
@@ -69,3 +90,15 @@ The aim of this project is to analyze loan applicant data and build a machine le
 * NumPy
 * Matplotlib
 * Scikit-learn
+
+##  Future Improvements
+
+* Try advanced models (Random Forest, XGBoost)
+* Hyperparameter tuning
+* Improve accuracy with feature engineering
+
+
+##  Author
+
+**Khushi Gupta**
+B.Tech CSE (AI/ML Aspirant)
