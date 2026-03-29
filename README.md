@@ -77,11 +77,11 @@ The dataset contains information about loan applicants, including:
 * Accuracy: **~78.8%**
 * Confusion Matrix used for evaluation
 
-### Key Insights:
+##  Key Insights
 
-* Credit history is the most important factor
-* Applicants with good credit history have higher approval chances
-* Model performs well for initial prediction tasks
+- Credit History is the most important factor for loan approval
+- Applicants with good credit history have significantly higher chances of approval
+- Property area and education also influence loan decisions
 
 ##  Technologies Used
 
